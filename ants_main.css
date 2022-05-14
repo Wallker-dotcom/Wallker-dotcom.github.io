@@ -1,0 +1,44 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif
+}
+
+#slidebar {
+    color: teal;
+}
+
+#fpg1, #fpg2, #fpg3, #spg1, #spg2, #spg3 {
+    color: teal;
+}
+
+#help_page {
+    text-align: center;
+}
+
+#help_page1 {
+    text-align: center;
+}
+
+#page_content {
+    text-align: left;
+    color: black;
+    
+}
+
+#page_content_button {
+    color:black;
+}
+
+#about_me {
+    color: teal;
+}
+
+.baner {
+    text-align: center;
+    color: teal;
+    
+}
+
+header {
+   background-image: url(https://1.bp.blogspot.com/-70Ag0mn5m8M/UowXxpu1oVI/AAAAAAAADA4/tOH5OArAW-E/s1600/Ants-Wallpaper-20141.jpg);
+}
+
