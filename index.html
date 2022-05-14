@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="en, sr">
-<title>YLW help page</title>
+<html lang="en">
+<head>
+<title>The Ants Underground Kingdom YLW Help Page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="ants_main.css">
 
-<style>
-    body,h1,h2,h3,h4,h5,h6 { font-family: "Raleway", "sans-serif" }
-
-    header { background-color:turquoise; }
-</style>
-
+</head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+    <a href="#" onclick="close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="" style="width:45%;" class="w3-round"><br><br>
-    <h4  style="text-align: center;"><b>YLW</b></h4>
-    <p class="w3-text-grey" style="text-align: center;">YLW Assistant Team</p>
+    <img src="https://games.lol/wp-content/uploads/2021/06/the-ants-download-free.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4 id="help_page1"><b>YLW Help Page</b></h4>
   </div>
-  <div class="w3-bar-block">
-    <a href="#page content" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PAGE CONTENT</a> 
-    <a href="#assistant team" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ASSISTANT TEAM</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  <div id="slidebar" class="w3-bar-block">
+    <a href="#page_content" onclick="close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PAGE CONTENT</a> 
+    <a href="#premium_content_button" onclick="close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PREMIUM CONTENT</a> 
+    <a href="#contact" onclick="close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -41,20 +37,20 @@
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
-  <header id="YLW Assistant">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <header id="page_content">
+    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>YLW Assistant</b></h1>
+    <h1 class="baner"><b>The Ants Underground Kingdom Help Page</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-black"><i class="fa fa-diamond w3-margin-right"></i>ALL</button>
       <button class="w3-button w3-white">Events</button>
       <button class="w3-button w3-white w3-hide-small">Special Ants</button>
       <button class="w3-button w3-white w3-hide-small">Evolution</button>
@@ -66,51 +62,45 @@
   </header>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+  <div id="fpg1" class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.kimballstock.com/images/dog-stock-photos.jpg" alt="Events" style="width:100%;" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>events</b></p>
-        <p>#########################</p>
+      <img src="/w3images/mountains.jpg" alt="Events" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" alt="Evolution" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Evolution</b></p>
-        <p>#########################</p>
+    <div id="fpg2" class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/lights.jpg" alt="Special_Ants" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="https://greepx.com/wp-content/uploads/2020/02/1581865226_516_ant-wallpapers.jpg" alt="Special Ants" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Special Ants</b></p>
-        <p>#########################</p>
+    <div id="fpg3" class="w3-third w3-container">
+      <img src="/w3images/nature.jpg" alt="Evolution" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
   </div>
   
   <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
+  <div id="spg1" class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://eskipaper.com/images/free-math-wallpaper-1.jpg" alt="Mattematic" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Mattematic</b></p>
-        <p>#########################</p>
+      <img src="/w3images/p1.jpg" alt="Mattematic" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.armatherm.co.uk/wp-content/uploads/2017/02/ArmathermTM-frr-view.png" alt="Buildings" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Buildings</b></p>
-        <p>#########################</p>
+    <div id="spg2" class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p2.jpg" alt="Gameplay" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="https://megagames.com/sites/default/files/game-images/Fun%20with%20Ragdolls%20The%20Game%204.jpg" alt="Gameplay" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Gameplay</b></p>
-        <p>#########################</p>
+    <div id="spg3" class="w3-third w3-container">
+      <img src="/w3images/p3.jpg" alt="Premium" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container">
+        <img src="https://www.seekpng.com/png/detail/176-1769092_evolution-human.png" style="width:100%" class="w3-hover-opacity">
       </div>
     </div>
   </div>
@@ -127,96 +117,46 @@
     </div>
   </div>
 
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Auto game info
-      </button>
-    </p>
-    <hr>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Assistant Team</b></h4>
+    <p id="about_me">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest to share positive energy. I want to share my knowlege with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  <hr>
     
-    <h4>Premium functions</h4>
+    <p id="premium_content_button">
+        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+          <i class="fa fa-download w3-margin-right"></i>Basic auto game info</button>
+      
+        </p>
+    <h4>Premium Content</h4>
     <!-- Pricing Tables -->
-    <div class="w3-row-padding" style="margin: 16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Basic auto game math</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">
-            <h2>$ 000</h2>
-            <span class="w3-opacity">per function</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic auto game info</li>
+            <li class="w3-padding-16">???</li>
+            <li class="w3-padding-16">???</li>
+            <li class="w3-padding-16">???</li>
+            <li class="w3-padding-16">???</li>
+            <li class="w3-padding-16">
+              <h2>$ 000</h2>
+              <span class="w3-opacity">per order</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
       
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">Full auto game info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
+          <li class="w3-teal w3-xlarge w3-padding-32">Full auto game math</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
           <li class="w3-padding-16">
             <h2>$ 000</h2>
-            <span class="w3-opacity">per function</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32"> GameBot</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">
-            <h2>$ 000</h2>
-            <span class="w3-opacity">per buy</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="w3-row-padding" style="margin: 16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Acc q20 basic</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">
-            <h2>$ 000</h2>
-            <span class="w3-opacity">per buy</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">Acc q20 full</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">
-            <h2>$ 000</h2>
-            <span class="w3-opacity">per buy</span>
+            <span class="w3-opacity">per order</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
@@ -226,14 +166,14 @@
       
       <div class="w3-third">
         <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32"> Acc q22</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
-          <li class="w3-padding-16">Info</li>
+          <li class="w3-black w3-xlarge w3-padding-32">Custom auto game math</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
+          <li class="w3-padding-16">???</li>
           <li class="w3-padding-16">
             <h2>$ 000</h2>
-            <span class="w3-opacity">per buy</span>
+            <span class="w3-opacity">per order</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
@@ -244,27 +184,25 @@
   </div>
   
   <!-- Contact Section -->
-  
-      <div class="w3-container w3-padding-large w3-grey">
+  <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Assistant Team</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
+      <div id="mail" class="w3-third w3-dark-grey">
         <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>email@email.com - Arandjel</p>
-        <p>email@email.com - Barney</p>
+        <p>wf3658403@protonmail.com</p>
+        <p>mailmail@mail.com</p>
       </div>
-      <div class="w3-third w3-teal">
+      <div id="loc" class="w3-third w3-teal">
         <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Belgrade, SRB - Arandjel</p>
-        <p>Berline, GER - Barney</p>
+        <p>Belgrade, SRB</p>
+        <p>Berline, GER</p>
       </div>
-      <div class="w3-third w3-dark-grey">
+      <div id="num" class="w3-third w3-dark-grey">
         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>1111111111 - Arandjel</p>
-        <p>1111111111 - Barney</p>
+        <p>+381 61 1111111</p>
+        <p>+111 11 1111111</p>
       </div>
-            <div class="w3-container w3-padding-large w3-grey">
-    
+    </div>
     <hr class="w3-opacity">
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
@@ -287,23 +225,23 @@
   <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Some text about Assistant Team.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"> YLW Assistant team</a></p>
+      <h3>YLW</h3>
+      <p>Some short text about Assistant team.</p>
+      <p>Powered by <a href="URL for Assistant team page" target="_blank">YLW_Assistant_team</a></p>
     </div>
   
     <div class="w3-third">
-      <h3>POSTS</h3>
+      <h3>Assistant team</h3>
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
-          <img src="https://wallpapercave.com/wp/3lW130v.jpg" class="w3-left w3-margin-right" style="width: 50px; height: 50px;">
-          <span class="w3-large">Arandjel</span><br>
-          <span>Basic info</span>
+          <img src="https://wallpaperaccess.com/full/1653229.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">White Fox</span><br>
+          <span>Penetration Tester,Frontend developer</span>
         </li>
         <li class="w3-padding-16">
-          <img src="https://wallpapercave.com/wp/3lW130v.jpg" class="w3-left w3-margin-right" style="width: 50px; height: 50px;">
+          <img src="https://yesofcorsa.com/wp-content/uploads/2019/11/Ant-On-Water-Drop-Wallpaper-1024x686.jpg" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Barney</span><br>
-          <span>Basic info</span>
+          <span>Programmer</span>
         </li> 
       </ul>
     </div>
@@ -311,29 +249,30 @@
     <div class="w3-third">
       <h3>POPULAR TAGS</h3>
       <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Something1</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something2</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something8</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something4</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something3</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something9</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something5</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something11</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something10</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something6</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something12</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something14</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something7</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Something13</span>
+        <span class="w3-tag w3-black w3-margin-bottom">Tag 1</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 2</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 3</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 4</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 5</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 6</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 7</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 8</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 9</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 10</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 11</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 12</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 13</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tag 14</span>
       </p>
     </div>
+
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="Assistant team" title="W3.CSS" target="_blank" class="w3-hover-opacity">Assistant team</a></div>
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="URL OF ASSISTANT TEAM PAGE" title="YLW_Assistant_team" target="_blank" class="w3-hover-opacity">YLW Assistant team</a></div>
 
 <!-- End page content -->
 </div>
 
 <script>
 // Script to open and close sidebar
-function Bot_open() {
+function open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
 }
  
-function Bot_close() {
+function close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
